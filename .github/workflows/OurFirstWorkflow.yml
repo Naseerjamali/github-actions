@@ -21,3 +21,6 @@ jobs:
              echo "The repository ${{github.repository}} contains the following files:"
              tree
              
+       - name: Perl shell
+         run: print %ENV
+         shell: perl {0}
